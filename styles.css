@@ -1,0 +1,99 @@
+html{
+	background-color: #F8F8FF;
+	color: #696969;
+	font-family: 'Noto Sans Display', sans-serif;
+}
+
+main{
+	padding-top: 3vw;
+	text-align: center;
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-bottom: 2vh;
+}
+
+p{
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+
+/* Nav styles */
+#nav{
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #DCDCDC;
+}
+
+#nav-list{
+	display: flex;
+	list-style:  none;
+	margin: 0;
+}
+
+#nav-list a{
+	display: block;
+	padding: 1vw 4vw 1vw 4vw;
+	text-decoration: none;
+	color: #696969;
+}
+
+#nav-list a:hover{
+	background-color: #696969;
+	color: #F8F8FF;
+}
+/* End of Nav styles */
+
+
+
+/* Main styles */
+
+#avatar{
+	display: block;
+	margin-top: 3vh;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 50%;
+	width: 18%;
+	border: 3px solid #2F4F4F;
+}
+
+#intro{
+	margin-right: 15%;
+	margin-left: 15%;
+	font-size: 1.5em;
+	margin-top: 6vh;
+	margin-bottom: 6vh;
+}
+
+#description{
+	font-size: .95em;
+	text-align: justify;
+}
+
+/* End of Main styles */
+
+
+
+/* Footer styles */
+#links{
+	display: block;
+	text-align: center;
+}
+
+#links a{
+	display: inline-block;
+	padding: 0vw 4vw 1vw 4vw;
+	text-decoration: none;
+	color: #696969;
+}
+
+#links a:hover{
+	color: black;
+	transform: translateY(5px);
+}
+/* End of Footer styles */
