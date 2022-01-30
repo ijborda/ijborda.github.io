@@ -48,6 +48,7 @@ section {
 }
 p {
      line-height: 1.4rem;
+     margin-bottom: 2rem;
 }
 ul {
      padding-left: 0px;
@@ -130,8 +131,31 @@ section.banner div{
 /***************/
 /* INTRO       */
 /***************/
-.intro > p {
-     margin-bottom: 2rem;
+
+/* Add designs to the languages */
+span.matlab {
+     background: rgb(175, 116, 6);
+}
+span.r {
+     background: blue;
+}
+span.html {
+     background: green;
+}
+span.css {
+     background: teal;
+}
+span.javascript {
+     background: red;
+}
+span {
+     display: inline-block;
+     line-height: 1em;
+     padding: .25em .4em;
+     color: white;
+     font-size: 80%;
+     font-weight: 700;
+     border-radius: .25rem;
 }
 
 /***************/
