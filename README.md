@@ -1,3 +1,3 @@
 # My Personal website
 
-Visit at [ijborda.github.io] (https://ijborda.github.io).
+Visit at https://ijborda.github.io.
