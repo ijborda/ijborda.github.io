@@ -1,0 +1,210 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* SITEWIDE
+/*******************************************/
+
+/* Defaults */
+body {
+     /* Size */
+     width: 900px;
+     min-height: 100vh;
+     margin: 0 auto;
+     /* Root typography */
+     font-family: 'Murecho', sans-serif;
+     color: #2B2024;
+     /* Background */
+     background: #FBF9FA;
+}
+
+/* Make links have same height as other list items */
+a {
+     display: inline-block;
+     text-decoration: none;
+     color: #2B2024;
+}
+
+/* Spacings */
+section {
+     margin: 2rem 0;
+
+}
+p {
+     line-height: 1.4rem;
+}
+ul {
+     padding-left: 0px;
+}
+h1, h2 {
+     margin: 1rem 0;
+}
+
+/* Typography */
+p {
+     font-size: 1rem;
+     text-align: justify;
+}
+h1 {
+     font-size: 2rem;
+}
+h2 {
+     font-size: 1.2rem;
+}
+
+/******************************************
+/* MODULES
+/*******************************************/
+
+/***************/
+/* Container   */
+/***************/
+section.container {
+     width: 90%;
+     margin: 0 auto;
+}
+
+/***************/
+/* Header      */
+/***************/
+
+/* Center */
+header {
+     text-align: center;
+}
+
+/* Horizontal lists */
+ul.navHead > li {
+     display: inline-block;
+     width: 20%;
+     padding-left: 0px;
+}
+
+/* Add line to separate navigation to content */
+header {
+     border-bottom: 2px solid #A80038;
+}
+
+/***************/
+/* BANNER      */
+/***************/
+
+/* Make container relative */
+section.banner {
+     position: relative;
+     margin: 4rem 0;
+}
+
+/* Resize and design avatar */
+.avatar {
+     height: 150px;
+     border-radius: 50%;
+     border: 5px solid white;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     margin: auto auto;
+}
+
+/* Shift text to the right */
+section.banner div{
+     margin-left: 180px;
+}
+
+/***************/
+/* INTRO       */
+/***************/
+.intro > p {
+     margin-bottom: 2rem;
+}
+
+/***************/
+/* SOCIALS     */
+/***************/
+
+/* Horizontal links */
+ul.navFoot  > li {
+     display: inline-block;
+     width: 50px;
+}
+
+/* Center links */
+section.socials {
+     text-align: center;
+}
+
+/* Adjust size and design of icons */
+.icon {
+     display: inline-block;
+     color: #726b6e;
+     font-size: 30px;
+}
+
+/******************************************
+/* STATE
+/*******************************************/
+
+/* Add hover on links */
+.navHead a:hover, i:hover {
+     color: #A80038;
+     transform: translateY(2px);
+}
+
+/******************************************
+/* MEDIA STYLES
+/*******************************************/
+/* Change Margin for tablets*/
+@media all and (max-width: 900px) {
+     body {
+          width: 90vw;
+          min-height: 100vh;
+          margin: 0 auto;
+     }
+}
+
+/* Change Margin for phones*/
+@media all and (max-width: 390px) {
+     body {
+          width: 95vw;
+          min-height: 100vh;
+          margin: 0 auto;
+     } 
+}
+
+/* Change banner layout for small widths*/
+@media all and (max-width: 630px) {
+     /* Center avatar */
+     img.avatar {
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+     }
+     /* Center banner content and next line */
+     section.banner div{
+          margin-left: 0;
+          text-align: center;
+          padding-top: 150px;
+     }   
+      /* Reduce spacing in banner  */
+     section.banner {
+          margin: 1rem 0;
+     }
+}
+
+
