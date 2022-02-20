@@ -17,127 +17,262 @@
 	clear: both;
 }
 
+/* Prevent white space on the right side to appear when screensize is small */
+html, body {
+     width: 100%;
+     height: 100%;
+     margin: 0px;
+     padding: 0px;
+     overflow-x: hidden;
+}
+
 /******************************************
 /* SITEWIDE
 /*******************************************/
 
-/* Defaults */
-body {
-     /* Size */
-     width: 900px;
-     min-height: 100vh;
-     margin: 0 auto;
-     /* Root typography */
-     font-family: 'Murecho', sans-serif;
-     color: #2B2024;
-     /* Background */
-     background: #FBF9FA;
+/* Set default font style and font size */
+html {
+     font-family: 'Lora', serif;
+     font-size: 62.5%;
 }
-
-/* Make links have same height as other list items */
+/* Remove link styles */
 a {
-     display: inline-block;
      text-decoration: none;
-     color: #2B2024;
 }
-
-/* Spacings */
-section {
-     margin: 2rem 0;
-
+/* Remove list styles */
+li {
+     list-style-type: none;
+     font-size: 1.3rem;
 }
-p {
-     line-height: 1.4rem;
-     margin-bottom: 2rem;
-}
+/* Remove list padding */
 ul {
-     padding-left: 0px;
+     padding-left: 0;
 }
-h1, h2 {
-     margin: 1rem 0;
-}
-
-/* Typography */
+/* Set font sizes */
 p {
-     font-size: 1rem;
+     font-size: 1.4rem;
 }
-h1 {
+a, button {
+     font-size: 1.2rem;
+}
+h3 {
      font-size: 2rem;
 }
-h2 {
-     font-size: 1.2rem;
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Set body as flex */
+.hero, .aboutMe, header {
+     display: flex;
+     justify-content: center;
+}
+/* Set width and margins */
+.navContainer {
+     flex-basis: max(80vw);
+}
+.largeContainer {
+     flex-basis: max(80vw);
+     padding: 8% 2.5%;
+}
+/* Set nav flex */
+.navContainer, nav ul {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+/* Set nav socials to have smaller width */
+.navRight {
+     flex-basis: 15%;
+     gap: 10px;
+}
+/* Set nav links to have bigger width */
+.navCenter {
+     flex-basis: 40%;
+     gap: 10px;
+}
+/* Set hero flex */
+.hero-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 5%;
+}
+/* Set hero text to have bigger width */
+.hero-container .text{
+     flex-basis: 70%;
+}
+/* Set hero socials flex */
+.socials ul{
+     display: flex;
+     gap: 5%;
+}
+/* Set about me flex */
+.aboutMe-container {
+     display: flex;
+     gap: 10%;
+}
+/* Set about me info (icons to values) flex */
+.info ul {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+}
+/* Set about me info (between items) flex */
+.info li {
+     display: flex;
+     gap: 1rem;
+     justify-content: flex-start;
+}
+/* Set project list flex */
+.projectList-container {
+     display: flex;
+     flex-flow: row wrap;
+     gap: 5%;
+     justify-content: center;
+     row-gap: 50px;
+}
+/* Set each project flex */
+.project {
+     display: flex;
+     flex-direction: column;
+     gap: 2%;
+     text-align: center;
+}
+/* Set each project info flex */
+.projectInfo {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
 }
 
 /******************************************
 /* MODULES
 /*******************************************/
 
-/***************/
-/* Container   */
-/***************/
-section.container {
-     width: 90%;
-     margin: 0 auto;
+/****************/
+/* REUSABLES  
+/****************/
+
+/* Button styles */
+.click {
+     background: rgb(255, 211, 228);
+     color: rgb(101, 43, 66);
+     font-weight: bold;
+     padding: 3% 7%;
+     border-radius: 20px;
+     border: none;
 }
-
-/***************/
-/* Header      */
-/***************/
-
-/* Center */
-header {
-     text-align: center;
-}
-
-/* Horizontal lists */
-ul.navHead > li {
+/* Set hover effect */
+.hover:hover {
      display: inline-block;
-     width: 20%;
-     padding-left: 0px;
+     transform: translateY(5px);
 }
 
-/* Add line to separate navigation to content */
+/****************/
+/* NAV  
+/****************/
+
+/* Set header background */
 header {
-     border-bottom: 2px solid #A80038;
+     background: white;
+     color: rgb(101, 43, 66);
+}
+/* Set content color */
+a, li, nav i {
+     color: rgb(101, 43, 66);
+     
+}
+/* Set h1 size mand margin */
+.navLeft h1 {
+     font-family: 'Dancing Script', cursive;
+     font-size: 2.1rem;
+     margin: 5% 0;
+}
+/* Set icon size and margin */
+.navRight i {
+     font-size: 2.4rem;
 }
 
-/***************/
-/* BANNER      */
-/***************/
+/****************/
+/* HERO PAGE  
+/****************/
 
-/* Make container relative */
-section.banner {
-     position: relative;
-     margin: 4rem 0;
+/* Set background and color */
+section.hero {
+     background: rgb(114, 61, 83);
+     color: rgb(255, 255, 255);
 }
-
-/* Resize and design avatar */
-.avatar {
-     height: 150px;
+/* Set span styles */
+.intro span {
+     display: inline-block;
+     background: rgb(255, 211, 228);
+     color: rgb(101, 43, 66);
+     font-weight: bold;
+     padding: 3% 7%;
+     border-radius: 20px;
+     font-size: 1.5rem;
+}
+/* Set h1 styles */
+.intro h2:first-of-type {
+     font-size: 5.5rem;
+     margin: 5% 0;
+     font-weight: 500;
+}
+/* Set h2 styles */
+.intro h2 {
+     margin: 5% 0;
+     font-weight: 100;
+     text-transform: uppercase;
+     font-size: 2.1rem;
+}
+/* Set image styles */
+.image img {
+     display: inline-block;
+     height: 300px;
      border-radius: 50%;
      border: 5px solid white;
-     position: absolute;
-     top: 0;
-     bottom: 0;
-     margin: auto auto;
+     box-shadow: 10px 4px 20px 0px #dde0e226;
+}
+/* Set socials icons styles */
+.socials i {
+     font-size: 2.4rem;
+     color: rgb(255, 255, 255);
+     font-weight: 100;
 }
 
-/* Shift text to the right */
-section.banner div{
-     margin-left: 180px;
-}
+/****************/
+/* ABOUT ME  
+/****************/
 
-/***************/
-/* INTRO       */
-/***************/
-
-/* Add designs to the languages */
-span.matlab {
-     background: rgb(175, 116, 6);
+/* Set background */
+.aboutMe {
+     background: rgb(244, 244, 246);
 }
-span.r {
-     background: blue;
+/* Set h3 styles */
+.aboutMe h3 {
+     color: rgb(114, 61, 83);
+     font-size: 2.1rem;
 }
+/* Give margin at the bottom of last paragraph */
+.aboutMe p:last-of-type {
+     margin-bottom: 7%;
+}
+/* Give margin between two links */
+.aboutMe a:last-of-type {
+     margin-left: 3%;
+}
+/* Set prog languages styles */
+.lang {
+     display: inline-block;
+     line-height: 1em;
+     padding: .25em .4em;
+     color: white;
+     font-size: 1.3rem;
+     border-radius: .25rem;
+}
+/* Set color of prog languages */
 span.html {
      background: green;
 }
@@ -145,89 +280,112 @@ span.css {
      background: teal;
 }
 span.javascript {
-     background: red;
+     background: rgb(61, 13, 192);
 }
-span {
-     display: inline-block;
-     line-height: 1em;
-     padding: .25em .4em;
-     color: white;
-     font-size: 80%;
-     font-weight: 700;
-     border-radius: .25rem;
+/* Make icons have uniform width */
+.info i {
+     width: 10px;
 }
 
-/***************/
-/* SOCIALS     */
-/***************/
+/****************/
+/* PROJECTS
+/****************/
 
-/* Horizontal links */
-ul.navFoot  > li {
-     display: inline-block;
-     width: 50px;
+/* Set project list background */
+.projectList {
+     background: rgb(244, 244, 246);
 }
-
-/* Center links */
-section.socials {
+/* Set project box styles */
+.project {
+     width: 350px;
+     border: 1px solid rgba(38, 51, 72, 0.1);
+     box-shadow: 0px 6px 12px rgba(216, 216, 216, 0.1);
+     border-radius: 10px;
+     padding: 32px;
+     background: rgb(247, 232, 238);
+}
+/* Set image styles */
+.projectList img {
+     width: 250px;
+     border: 1px solid rgb(101, 43, 66);
+}
+/* Set info styles */
+.projectInfo {
      text-align: center;
 }
-
-/* Adjust size and design of icons */
-.icon {
-     display: inline-block;
-     color: #726b6e;
-     font-size: 30px;
+/* Set h3 styles */
+.projectList h3 {
+     margin-bottom: 0;
 }
 
 /******************************************
-/* STATE
+/* MEDIA QUERIES
 /*******************************************/
 
-/* Add hover on links */
-.navHead a:hover, i:hover {
-     color: #A80038;
-     transform: translateY(2px);
+@media all and (max-width: 1250px) {
+     .hero-container {
+          flex-basis: 80vw;
+     }
 }
 
-/******************************************
-/* MEDIA STYLES
-/*******************************************/
-/* Change Margin for tablets*/
+@media all and (max-width: 1100px) {
+     .hero-container, .navContainer, .largeContainer {
+          flex-basis: 90vw;
+     }
+}
+
 @media all and (max-width: 900px) {
-     body {
-          width: 90vw;
-          min-height: 100vh;
-          margin: 0 auto;
+     html {
+          font-size: 60%;
      }
-}
-
-/* Change Margin for phones*/
-@media all and (max-width: 390px) {
-     body {
-          width: 95vw;
-          min-height: 100vh;
-          margin: 0 auto;
-     } 
-}
-
-/* Change banner layout for small widths*/
-@media all and (max-width: 630px) {
-     /* Center avatar */
-     img.avatar {
-          left: 0;
-          right: 0;
-          margin: 0 auto;
+     .hero-container, .navContainer, .largeContainer {
+          flex-basis: 90vw;
+          padding-left: 0;
+          padding-right: 0;
      }
-     /* Center banner content and next line */
-     section.banner div{
-          margin-left: 0;
+     .hero-container { 
+          flex-direction: column;
           text-align: center;
-          padding-top: 150px;
-     }   
-      /* Reduce spacing in banner  */
-     section.banner {
-          margin: 1rem 0;
+     }
+     .socials ul {
+          justify-content: center;
+     }
+     .aboutMe-container {
+          flex-direction: column;
+          row-gap: 40px;
+     }
+     .aboutMe {
+          text-align: center;
+     }
+     .info li {
+          justify-content: center;
+     }
+     .navCenter {
+          flex-basis: 50%;
+     }
+
+}
+
+@media all and (max-width: 800px) {
+     .navRight {
+          display: none;
+     } 
+     img.avatar {
+          height: 200px;
+     }
+     .navContainer {
+          height: 5rem;
+     }
+     .navCenter {
+          flex-basis: 60%;
      }
 }
 
-
+@media all and (max-width: 600px) {
+     html {
+          font-size: 50%;
+     }
+     .intro h2:first-of-type {
+          font-size: 4rem;
+     }
+}
