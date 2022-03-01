@@ -386,6 +386,10 @@ nav {
      .hero p {
           padding: 0 10%;
      }
+     .aboutMe .prog {
+          font-size: 1.3rem;
+          margin-right: .2rem;
+     }
 }
 @media screen and (max-width: 600px) {
      .about {
