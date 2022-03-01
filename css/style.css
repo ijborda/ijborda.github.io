@@ -367,6 +367,9 @@ nav {
           margin-bottom: 4rem;
           transform: none;
      }
+     .avatar {
+          order: -1;
+     }
      .filler {
           height: 20rem;
      }
