@@ -125,7 +125,7 @@ h2 {
      display: none;
 }
 
-main i {
+.main i {
      font-size: 2rem;
      color: rgb(222, 96, 87);
      margin-bottom: 2rem;
