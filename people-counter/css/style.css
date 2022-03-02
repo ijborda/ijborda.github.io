@@ -47,7 +47,7 @@ section {
      flex-direction: column;
      align-items: center;
      /* Fix width and position box in center */
-     width: 400px;
+     width: 350px;
      margin: 0 auto;
      margin-top: 5rem;
      /* Give border */
@@ -103,38 +103,44 @@ p {
 /* HEADER
 /*******************************************/
 
-ul {
+header ul {
      padding: 0;
      margin: 0;
 }
-a {
+header a {
      text-decoration: none;
 }
-.container {
+header .container {
      width: 80%;
      margin: 5rem auto;
 }
-.containerOutside {
+header.containerOutside {
      padding: 2rem;
 }
-nav {
+header nav {
      display: flex;
      justify-content: space-between;
      align-items: center;
 }
-.containerNav {
+header .containerNav {
      width: 90%;
      margin: 1rem auto 0 auto;
 }
-.socials {
+header .socials {
      display: flex; 
      list-style-type: none;
      gap: 2rem;
 }
-.socials i {
+header .socials i {
      color: rgb(40, 23, 27);
      font-size: 2rem;
 }
-.logo {
+header .logo {
      width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+     header .containerNav {
+          width: 100%;
+     }
 }
