@@ -298,7 +298,20 @@ nav {
      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .services {
-     width: 300px;
+     width: 240px;
+}
+span.itemNumber {
+     color: rgb(222, 96, 87);
+     border: 2px solid rgb(222, 96, 87);
+     border-radius: 50%;
+     display: inline-block;
+     font-size: 2rem;
+     padding: 1rem;
+     width: 50px;
+     margin-bottom: 2rem;
+}
+.details {
+     padding: 0 10%;
 }
 .servicesList {
      display: flex;
@@ -306,9 +319,13 @@ nav {
      gap: 3rem;
      justify-content: space-around;
      margin-top: 5rem;
+     margin-bottom: 5rem;
 }
 .servicesList + a {
      color: black;
+}
+.services p {
+     line-height: 2rem;
 }
 
 .filler {
