@@ -116,6 +116,10 @@ a:hover, a>i:hover {
      background:rgb(222, 96, 87);
 }
 
+.hoverHighlight:hover {
+     color: rgb(222, 96, 87);
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -332,8 +336,18 @@ span.itemNumber {
      margin-top: 5rem;
      margin-bottom: 5rem;
 }
-.servicesList + a {
+.message a {
      color: black;
+     width: 220px;
+}
+.message a:first-child {
+     color: white;
+     background: rgb(222, 96, 87);
+}
+.message {
+     display: flex;
+     justify-content: center;
+     gap: 50px;
 }
 .services p {
      line-height: 2rem;
@@ -450,6 +464,14 @@ span.itemNumber {
      }
      .heroBox {
           padding-top: 0;
+     }
+     .message {
+          flex-direction: column;
+          gap: 10px;
+          align-items: center;
+     }
+     .message a {
+          margin: 0;
      }
 }
      
