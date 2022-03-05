@@ -187,6 +187,16 @@ nav {
      margin-bottom: 0;
 }
 
+svg {
+     background: white;
+}
+.svgContainer {
+     font-size: 0;
+}
+
+#About-Me {
+     background: white;
+}
 .about {
      display: flex;
 }
@@ -256,7 +266,7 @@ nav {
 }
 
 #Projects {
-     background: white;
+     background: rgb(246, 243, 244);
 }
 .projects a {
      margin: 1rem 0;
@@ -268,7 +278,8 @@ nav {
 .projectBox {
      width: 300px;
      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-     padding: 2rem
+     padding: 2rem;
+     background: white;
 }
 .projectsList {
      display: flex;
@@ -286,7 +297,7 @@ nav {
 }
 
 #Services {
-     background: rgb(246, 243, 244);
+     background: white;
 }
 #Services * {
      text-align: center;
@@ -298,7 +309,7 @@ nav {
      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .services {
-     width: 240px;
+     flex-basis: 240px;
 }
 span.itemNumber {
      color: rgb(222, 96, 87);
@@ -411,6 +422,34 @@ span.itemNumber {
 @media screen and (max-width: 600px) {
      .about {
           width: 95%;
+     }
+     .hero p {
+          font-size: 1.2rem;
+          line-height: 1.7rem;
+          padding: 0 1%;
+     }
+     p {
+          font-size: 1.2rem;
+          line-height: 1.7rem;          
+     }
+     p, .timelineSub li {
+          font-size: 1.2rem;
+          line-height: 2rem;          
+     }
+     .timelineSub {
+          height: 7rem;
+     }
+     .hero img {
+          margin-bottom: 1rem;
+     }
+     .hero h1 {
+          font-size: 3rem;
+     }
+     .hero h2 {
+          font-size: 1.7rem;
+     }
+     .heroBox {
+          padding-top: 0;
      }
 }
      
