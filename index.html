@@ -36,6 +36,9 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com"> 
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 		<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap" rel="stylesheet">
+		
+		<!-- Scroll animation -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 		<!-- External CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
@@ -45,9 +48,17 @@
 		<header id="Home" class="containerOutside">
 			<div class="containerNav">
 				<nav>
-					<div>
+					<div class="logoBox">
 						<a href="#Home"><img class="logo" src="assets/logo.png"></a>
+						<div class="hamburgerBox" id="navButon">
+							<i class="fa-solid fa-bars"></i>
+						</div>
 					</div>
+					<!-- <ul class="links" id="navOption">
+						<li><a class="hoverHighlight" href="#About-Me">About Me</a></li>
+						<li><a class="hoverHighlight" href="#Projects">Projects</a></li>
+						<li><a class="hoverHighlight" href="#Services">Services</a></li>
+					</ul> -->
 					<ul class="socials">
 						<li><a target="_blank" href="https://twitter.com/ijborda"><i class="fa-brands fa-twitter"></i></a></li>
 						<li><a target="_blank" href="https://www.linkedin.com/in/ijborda/"><i class="fa-brands fa-linkedin-in"></i></a></li>
@@ -61,7 +72,7 @@
 			<div class="heroBox containerOutside">
 				<div class="container containerHero">
 					<section class="hero">
-						<div>
+						<div data-aos="fade-right">
 							<span class="tag">Hi there!</span>
 							<h1>I am Imari Joy.</h1>
 							<h2>Researcher & Software Engineer.</h2>
@@ -74,7 +85,7 @@
 								<li><a class="email" target="_blank" href="mailto:imari.borda2018@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
 							</ul>
 						</div>
-						<div class="avatar">
+						<div class="avatar" data-aos="fade-left">
 							<img src="assets/avatar.jpg">
 						</div>
 					</section>
@@ -87,7 +98,7 @@
 		<div id="About-Me">
 			<div class="containerOutside">
 				<div class="container about">
-					<section class="aboutMe">
+					<section class="aboutMe" data-aos="fade-right">
 						<span class="tag">About Me</span>
 						<h2>Imari Joy C. Borda</h2>
 						<ul>
@@ -98,7 +109,7 @@
 						<p><span class="prog r">R</span> <span class="prog html">HTML</span> <span class="prog css">CSS</span> <span class="prog js">JavaScript</span> <span class="prog wp">WordPress</span></p>
 						<a href="assets/Imari's CV.pdf" download class="button">Download my CV</a>
 					</section>
-					<section class="storyLine">
+					<section class="storyLine" data-aos="fade-left">
 						<h2>StoryLine</h2>
 						<ul class="timelineYear">
 							<li><i class="fa-solid fa-circle-dot"></i>2022</li>
@@ -132,31 +143,31 @@
 							<h2>Projects</h2>
 						</div>
 						<div class="projectsList">
-							<section class="projectBox">
+							<section class="projectBox" data-aos="fade-up">
 								<h3>Blond & Highlight</h3>
 								<p><span class="prog html">HTML</span> <span class="prog css">CSS</span></p>
 								<p>Elegance take change for this local on trend salon site.</p>
 								<a href="hair-salon/" target="_blank" class="button">Check it out</a>
 							</section>
-							<section class="projectBox">
+							<section class="projectBox" data-aos="fade-up">
 								<h3>Cusine Restaurant</h3>
 								<p><span class="prog html">HTML</span> <span class="prog css">CSS</span></p>
 								<p>A fully responsive and beautiful website for a full-service restaurant.</p>
 								<a href="restaurant/" target="_blank" class="button">Check it out</a>
 							</section>
-							<section class="projectBox">
+							<section class="projectBox" data-aos="fade-up">
 								<h3>Researcher's Portfolio</h3>
 								<p><span class="prog html">HTML</span> <span class="prog css">CSS</span> <span class="prog js">JavaScript</span></p>
 								<p>An online showcase of the works done by Researcher Federico Calo.</p>
 								<a href="https://ricocalo.com" target="_blank" class="button">Check it out</a>
 							</section>
-							<section class="projectBox">
+							<section class="projectBox" data-aos="fade-up">
 								<h3>Readability Test</h3>
 								<p><span class="prog html">HTML</span> <span class="prog css">CSS</span> <span class="prog js">JavaScript</span></p>
 								<p>A minimal readability test using the Coleman–Liau index. Designed for checking that the text written is not too verbose.</p>
 								<a href="readability" target="_blank" class="button">Check it out</a>
 							</section>
-							<section class="projectBox">
+							<section class="projectBox" data-aos="fade-up">
 								<h3>People Counter</h3>
 								<p><span class="prog html">HTML</span> <span class="prog css">CSS</span> <span class="prog js">JavaScript</span></p>
 								<p>Designed for researchers or data gatherers who needs to count numbers of people as part of a survey process.</p>
@@ -170,32 +181,34 @@
 		<div id="Services">
 			<div class="containerOutside">
 				<div class="container">
-					<span class="tag">Work with me!</span>
-					<h2>Services I Offer</h2>
-					<p class="details">I dedicate myself with presenting my clients with complete projects that not only meet, but exceed their initial vision. Knowing what to expect when we work together is critical - here is how I deliver success:</p>
+					<div data-aos="fade-up">
+						<span class="tag">Work with me!</span>
+						<h2>Services I Offer</h2>
+						<p class="details">I dedicate myself with presenting my clients with complete projects that not only meet, but exceed their initial vision. Knowing what to expect when we work together is critical - here is how I deliver success:</p>
+					</div>
 					<div class="servicesList">
-						<section class="services">
+						<section class="services" data-aos="fade-up">
 							<section>
 								<span class="itemNumber">1</span>
 								<h3>Consultation</h3>
 								<p>It all begins with a conversation where we'll pinpoint what this project is all about.</p>
 							</section>
 						</section>
-						<section class="services">
+						<section class="services" data-aos="fade-up">
 							<section>
 								<span class="itemNumber">2</span>
 								<h3>Proposal</h3>
 								<p>A detailed project proposal including visual preview will be presented and a plan of action will be decided.</p>
 							</section>
 						</section>
-						<section class="services">
+						<section class="services" data-aos="fade-up">
 							<section>
 								<span class="itemNumber">3</span>
 								<h3>Creation</h3>
 								<p>Clients receive regular updates regarding their project status while I create and test it.</p>
 							</section>
 						</section>
-						<section class="services">
+						<section class="services" data-aos="fade-up">
 							<section>
 								<span class="itemNumber">4</span>
 								<h3>Launch and Support</h3>
@@ -203,7 +216,7 @@
 							</section>
 						</section>
 					</div>
-					<div class="message">
+					<div class="message" data-aos="fade-up">
 						<a href="https://calendly.com/imari-borda2018/30min?back=1&month=2022-03" target="_blank" class="button">Book FREE Consultation</a>
 						<a href="mailto:imari.borda2018@gmail.com" class="button">Send Me A Message</a>
 					</div>
@@ -219,6 +232,7 @@
 						<li><a class="hoverHighlight" href="#Home">Home</a></li>
 						<li><a class="hoverHighlight" href="#About-Me">About Me</a></li>
 						<li><a class="hoverHighlight" href="#Projects">Projects</a></li>
+						<li><a class="hoverHighlight" href="#Services">Services</a></li>
 					</ul>
 					<div>
 						<small>&copy; 2022 Imari Joy Borda. All rights reserved.</small>
@@ -232,7 +246,8 @@
 				</div>
 			</div>
 		</footer>
-
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>AOS.init();</script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

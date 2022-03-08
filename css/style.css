@@ -22,14 +22,18 @@ html, body {
      width: 100%;
      height: 100%;
      margin: 0px;
-     padding: 0px;
-     overflow-x: hidden;
+     padding: 0px; 
 }
 
 /* Remove paddings and margins */
 ul, h1, h2, h3, p {
      padding: 0;
      margin: 0;
+}
+
+/* Add smooth scrolls */
+* {
+     scroll-behavior: smooth;
 }
 
 h1 {
@@ -143,8 +147,15 @@ nav {
      font-size: 2rem;
 }
 .logo {
-     width: 50%;
+     width: 80%;
 }
+.logoBox, nav .socials {
+     width: 150px;
+}
+.hamburgerBox {
+     display: none;
+}
+
 
 
 .hero {
@@ -432,6 +443,27 @@ span.itemNumber {
           font-size: 1.3rem;
           margin-right: .2rem;
      }
+     /* Show hamburger
+     nav .socials, nav .links {
+          display: none;
+     }
+     .logo {
+          width: 40%;
+     }
+     .hamburgerBox {
+          display: contents;
+          font-size: 30px;
+     }
+     .logoBox {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+     }
+     nav {
+          flex-direction: column;
+          align-items: center;
+     } */
 }
 @media screen and (max-width: 600px) {
      .about {
@@ -475,3 +507,20 @@ span.itemNumber {
      }
 }
      
+/* JavaScript */
+
+.hidden {
+     display: none;
+}
+
+/* .reveal {
+     position: relative;
+     transform: translateY(150px);
+     opacity: 0;
+     transition: all .5s ease;
+}
+
+.reveal.active {
+     transform: translateY(0px);
+     opacity: 1;
+} */
