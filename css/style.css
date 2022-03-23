@@ -365,7 +365,7 @@ span.itemNumber {
 }
 
 .filler {
-     background: url("../assets/filler.png");
+     background: url("../assets/filler.webp");
      background-size: cover;
      filter: opacity(30%);
      height: 40rem;
