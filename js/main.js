@@ -5,8 +5,6 @@ document.querySelector("#navButon").addEventListener("click", showNav)
 // Function for reveal
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
-    console.log(reveals)
-    console.log("success")
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
         var revealtop = reveals[i].getBoundingClientRect().top;
@@ -25,4 +23,16 @@ function reveal() {
 function showNav() {
     navOption = document.querySelector("#navOption")
     navOption.classList.toggle("hidden")
+}
+
+// Service worker
+if ("serviceWorker" in navigator) {
+    console.log("Ins")
+    navigator.serviceWorker.register("sw.js").then(registraton => {
+        console.log("SW Registered!")
+        console.log(registraton)
+    }).catch(error => {
+        console.log("SW Registration Failed!")
+        console.log(error)
+    })
 }
