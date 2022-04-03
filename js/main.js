@@ -27,12 +27,11 @@ function showNav() {
 
 // Service worker
 if ("serviceWorker" in navigator) {
-    console.log("Ins")
     navigator.serviceWorker.register("sw.js").then(registraton => {
-        console.log("SW Registered!")
-        console.log(registraton)
+        // console.log("SW Registered!")
+        // console.log(registraton)
     }).catch(error => {
-        console.log("SW Registration Failed!")
-        console.log(error)
+        // console.log("SW Registration Failed!")
+        // console.log(error)
     })
 }
