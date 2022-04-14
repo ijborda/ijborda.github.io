@@ -35,3 +35,9 @@ if ("serviceWorker" in navigator) {
         // console.log(error)
     })
 }
+
+// Delete caches
+caches.keys().then(function(names) {
+    for (let name of names)
+        caches.delete(name);
+});
