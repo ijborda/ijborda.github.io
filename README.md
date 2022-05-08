@@ -2,7 +2,7 @@
 
 Visit [my portfolio site](http://imarijoyborda.com/) to know more about me and to see what projects I'm currently into. 
 
-Link to my site:[http://imarijoyborda.com/](http://imarijoyborda.com/. 
+Link to my site:[http://imarijoyborda.com/](http://imarijoyborda.com/). 
 
 ![Screenshot of Site - 1](assets/readme/readme-1.png)
 
