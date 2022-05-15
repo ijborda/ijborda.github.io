@@ -3326,3 +3326,10 @@ input, select, textarea {
 			} */
 
 	}
+
+	/* Custom */
+
+	*::selection {
+		background: black;
+		color: white;
+	}
