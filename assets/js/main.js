@@ -159,7 +159,7 @@
 })(jQuery);
 
 // Change banner image
-fetch(`https://pixabay.com/api/?key=26730821-b16b9a863dcaf46bb73ee82b9&category=nature&image_type=background&safesearch=true&per_page=200`)
+fetch(`https://pixabay.com/api/?key=26730821-b16b9a863dcaf46bb73ee82b9&q=nature&image_type=background&safesearch=true&per_page=200`)
     .then(res => res.json())
     .then(data => {
         let imgURL = data.hits[Math.ceil(Math.random() * 200)].largeImageURL
