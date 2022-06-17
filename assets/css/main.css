@@ -3333,3 +3333,7 @@ input, select, textarea {
 		background: black;
 		color: white;
 	}
+
+#two .inner.full {
+  width: 100%;
+}
