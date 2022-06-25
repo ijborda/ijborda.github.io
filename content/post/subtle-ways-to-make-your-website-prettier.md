@@ -6,6 +6,7 @@ description = "Subtle ways to make a website prettier using simple lines of CSS 
 tags = [
     "web development",
     "tech",
+    "guide"
 ]
 toc = true
 draft = false
