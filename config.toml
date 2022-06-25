@@ -1,0 +1,71 @@
+baseURL = 'https://imarijoyborda.com/'
+languageCode = 'en-us'
+title = 'Imari Joy C. Borda | Reasercher and Software Engineer'
+summarylength = 20
+enableRobotsTXT = true
+
+[module]
+  # uncomment line below for temporary local development of module
+  # replacements = "github.com/lxndrblz/anatole -> ../../anatole"
+  [[module.imports]]
+    path = "github.com/lxndrblz/anatole"
+    disable = false
+
+[params]
+title = "I'm Imari"
+description = "Researcher and Software Engineer"
+author = "Imari Joy C. Borda"
+profilePicture = "images/profile.jpg"
+favicon = "favicons/"
+contentratio = 0.7
+customCss = ["css/custom.css", "css/styles.css"]
+readMore = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+mainSections = ["post"]
+
+[[params.socialIcons]]
+icon = "fab fa-twitter"
+title = "Linkedin"
+url = "https://de.linkedin.com/"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "Linkedin"
+url = "https://de.linkedin.com/"
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://de.linkedin.com/"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "Linkedin"
+url = "https://de.linkedin.com/"
+
+[menu]
+
+[[menu.main]]
+name = "Home"
+identifier = "home"
+weight = 100
+url = "/"
+
+[[menu.main]]
+name = "About"
+weight = 200
+identifier = "about"
+url = "/about/"
+
+[[menu.main]]
+name = "Projects"
+weight = 300
+identifier = "projects"
+url = "/projects/"
+
+[[menu.main]]
+name = "Blog"
+weight = 400
+identifier = "blog"
+url = "/blog/"
