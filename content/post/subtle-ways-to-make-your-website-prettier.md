@@ -12,7 +12,7 @@ toc = true
 draft = false
 +++
 
-Sometimes, the only thing you need to make your website better looking are few CSS and JavaScript lines. Here are four simple lines of code to make your website looks prettier and smooter.
+Sometimes, the only thing you need to make your website better looking are few CSS and JavaScript lines. Here are four simple lines of code to make your website looks prettier and smoother.
 
 ## Make scroll smoother
 
