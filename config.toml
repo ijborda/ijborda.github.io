@@ -24,6 +24,7 @@ readMore = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 mainSections = ["post"]
+gtagId = "G-9MJ2JRM3RN"
 
 [[params.socialIcons]]
 icon = "fab fa-twitter"
