@@ -23,10 +23,10 @@ html {
 }
 ```
 
-- Site without `scroll-behavior: smooth`:
-  {{< youtube nJOSzCbp6K0 >}}
-- Site with `scroll-behavior: smooth`:
-  {{< youtube RYEdSnTriwY >}}
+Site without `scroll-behavior: smooth`:
+{{< youtube nJOSzCbp6K0 >}}
+Site with `scroll-behavior: smooth`:
+{{< youtube RYEdSnTriwY >}}
 
 ## Use CSS transition
 
@@ -42,10 +42,10 @@ button {
 }
 ```
 
-- Site without transition:
-  {{< youtube _5GQ1rzXgD4 >}}
-- Site with transition:
-  {{< youtube KT-4WYmFJFM >}}
+Site without transition:
+{{< youtube _5GQ1rzXgD4 >}}
+Site with transition:
+{{< youtube KT-4WYmFJFM >}}
 
 ## Make backgrounds fixed
 
@@ -59,10 +59,10 @@ Disclaimer: I used [the site by HTML5 UP](https://html5up.net/alpha) for this de
 }
 ```
 
-- Site without fixed-background:
-  {{< youtube pQaVoDfciNI >}}
-- Site with fixed-background:
-  {{< youtube BNbLemIFchg >}}
+Site without fixed-background:
+{{< youtube pQaVoDfciNI >}}
+Site with fixed-background:
+{{< youtube BNbLemIFchg >}}
 
 ## Use animations
 
@@ -92,11 +92,11 @@ On your element that will be animated, apply this:
 <div data-aos="fade-left"></div>
 ```
 
-You can change the value of `data-aos` to other animation effects (fade-right, fade-up, fade-down, zoom-in, zoom-out, etc.). Your could also change other settings like duration, offset, etc. See more [here](https://michalsnik.github.io/aos/).
+You can change the value of `data-aos` to other animation effects (fade-right, fade-up, fade-down, zoom-in, zoom-out, etc.). You could also change other settings like duration, offset, etc. See more [here](https://michalsnik.github.io/aos/).
 
-In the demo below, `data-aos="fade-right"` on the div element on the left, and `data-aos="fade-right"` on the div element on the right. This create an effect like the two elements are closing in together when the site is loaded.
+In the demo below, I placed `data-aos="fade-right"` on the div element on the left, and `data-aos="fade-right"` on the div element on the right. This creates an effect like the two elements are closing in together when the site is loaded.
 
-- Site without animation:
-  {{< youtube DWLGBItyneo >}}
-- Site with animation:
-  {{< youtube t4W5kTpzaGY >}}
+Site without animation:
+{{< youtube DWLGBItyneo >}}
+Site with animation:
+{{< youtube t4W5kTpzaGY >}}
