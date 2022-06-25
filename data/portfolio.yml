@@ -1,16 +1,35 @@
 portfolioitems:
   # portfolio category
-  - title: Coding Projects
+  - title: Selected Projects
     # items within a category
     portfolioitem:
-      - name: Project 1
+      - name: SIR Simulator
+        image: '/images/projects/sir-simulator-preview.png'
+        link: https://imarijoyborda.com/sir-simulator/
+        github: https://github.com/ijborda/sir-simulator
+        description: 'Simulates the classical SIR epidemic model. A frontend implementation of [SIR API](https://sir-epimodel-api.herokuapp.com/).'
+      - name: SIR API
+        image: '/images/projects/sir-api-preview.png'
+        link: https://sir-epimodel-api.herokuapp.com/
+        github: https://github.com/ijborda/sir-api
+        description: 'A free API that that simulates the epidemic model SIR. Accepts values for different parameters and responds in JSON format.'
+      - name: COVID-19 Statistics
         image: '/images/projects/covid-preview.png'
-        link: https://gohugo.io/
-        github: https://facebook.com/
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-        portfolioitem:
-      - name: Project 1
-        image: '/images/projects/covid-preview.png'
-        link: https://gohugo.io/
-        github: https://facebook.com/
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        link: https://imarijoyborda.com/covid19-statistics/
+        github: https://github.com/ijborda/covid19-statistics
+        description: 'Real time COVID-19 monitoring app that shows the percent and number of change in cases and deaths.'
+      - name: CODIE
+        image: '/images/projects/codie-preview.png'
+        link: http://imarijoyborda.com/codie/
+        github: https://github.com/ijborda/codie
+        description: 'Shows your current codewars stats (ranks, leaderboard position, and rank in each languages) at a glance.'
+      - name: liefgamalo.com
+        image: '/images/projects/gamalo-preview.png'
+        link: https://liefgamalo.com/
+        github: https://github.com/ijborda/liefgamalo.com
+        description: 'Online showcase of the works done by Wildlife advocate Lief Gamalo.'
+      - name: Redability Test for Researchers
+        image: '/images/projects/readability-preview.png'
+        link: https://imarijoyborda.com/readability/
+        github: https://github.com/ijborda/readability
+        description: 'A minimal readability test using the Coleman–Liau index. Supports unlimited text length and runs purely on client side. Designed for users with long text and wants confidentiality.'

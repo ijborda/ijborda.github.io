@@ -1,6 +1,7 @@
 baseURL = 'https://ijborda.github.io/'
 languageCode = 'en-us'
 title = 'Imari Joy C. Borda | Reasercher and Software Engineer'
+enableEmoji = true
 summarylength = 20
 enableRobotsTXT = true
 
