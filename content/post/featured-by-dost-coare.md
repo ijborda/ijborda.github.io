@@ -46,7 +46,7 @@ WHPC Ph is an initiative of COARE that aims to create a strong and reliable comm
 
 Send us a DM if you are interested to be part of the #SpotlightOnWomenInHPC campaign or if you know a Juana whom we can feature.
 
-Visit our wiki to know more about us: https://asti.dost.gov.ph/.../about-coare/service-catalogue/
+Visit our wiki to know more about us: [https://asti.dost.gov.ph/.../about-coare/service-catalogue/](https://asti.dost.gov.ph/coare/wiki/Main/about-coare/service-catalogue/?fbclid=IwAR1TAoGj6aCnaNyJbRgICnl5hTRbhpjG417STHzaTpKGnX_PntpGXesv0BY)
 
 #SpotlightOnWomenInHPC
 #WomenInHPC
