@@ -26,23 +26,23 @@ mainSections = ["post"]
 
 [[params.socialIcons]]
 icon = "fab fa-twitter"
-title = "Linkedin"
-url = "https://de.linkedin.com/"
+title = "Twitter"
+url = "https://twitter.com/ijborda"
 
 [[params.socialIcons]]
 icon = "fab fa-github"
-title = "Linkedin"
-url = "https://de.linkedin.com/"
+title = "Github"
+url = "https://github.com/ijborda"
 
 [[params.socialIcons]]
 icon = "fab fa-linkedin"
 title = "Linkedin"
-url = "https://de.linkedin.com/"
+url = "https://www.linkedin.com/in/ijborda/"
 
 [[params.socialIcons]]
 icon = "fas fa-envelope"
-title = "Linkedin"
-url = "https://de.linkedin.com/"
+title = "Mail"
+url = "mailto:imari.borda2018@gmail.com"
 
 [menu]
 
