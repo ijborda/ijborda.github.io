@@ -23,6 +23,7 @@ readMore = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 mainSections = ["post"]
+publishDir = "docs" 
 
 [[params.socialIcons]]
 icon = "fab fa-twitter"
