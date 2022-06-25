@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Imari Joy C. Borda | Reasercher and Software Engineer'
 summarylength = 20
 enableRobotsTXT = true
+publishDir = "docs" 
 
 [module]
   # uncomment line below for temporary local development of module
@@ -23,7 +24,6 @@ readMore = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 mainSections = ["post"]
-publishDir = "docs" 
 
 [[params.socialIcons]]
 icon = "fab fa-twitter"
