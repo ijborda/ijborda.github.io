@@ -3,7 +3,6 @@ languageCode = 'en-us'
 title = 'Imari Joy C. Borda | Reasercher and Software Engineer'
 summarylength = 20
 enableRobotsTXT = true
-publishDir = "docs" 
 
 [module]
   # uncomment line below for temporary local development of module
