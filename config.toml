@@ -4,6 +4,7 @@ title = 'Imari Joy C. Borda | Reasercher and Software Engineer'
 enableEmoji = true
 summarylength = 20
 enableRobotsTXT = true
+googleAnalytics = "G-9MJ2JRM3RN"
 
 [module]
   # uncomment line below for temporary local development of module
