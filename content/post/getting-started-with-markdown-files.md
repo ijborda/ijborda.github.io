@@ -28,3 +28,5 @@ This is a material I created for an internal workshop on how to get started with
 5. Using GitHub Pages to generate a static website.
 
 The material can be found [here](https://imarijoyborda.com/markdown-tutorial/).
+
+Feel free to use and share!
