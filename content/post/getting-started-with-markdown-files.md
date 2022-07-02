@@ -8,7 +8,7 @@ tags = [
     "markdown",
     "fundamentals",
     "github pages",
-    "jekkyl"
+    "jekkyl",
     "web development",
     "static website",
     "guide",
