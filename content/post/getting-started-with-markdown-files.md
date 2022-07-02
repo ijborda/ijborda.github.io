@@ -15,7 +15,7 @@ tags = [
     "tutorial",
     "workshop"
 ]
-toc = true
+toc = false
 draft = false
 +++
 
