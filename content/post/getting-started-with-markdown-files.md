@@ -1,11 +1,19 @@
 +++
 author = "Imari Joy C. Borda"
 title = "Getting Started with Markdown Files"
-date = "2022-06-25"
-description = "A guide on how to first d"
+date = "2022-07-02"
+description = "A guide on how to make your first markdown file and publish it as a static website"
 tags = [
-    "shortcodes",
-    "privacy",
+    "tech",
+    "markdown",
+    "fundamentals",
+    "github pages",
+    "jekkyl"
+    "web development",
+    "static website",
+    "guide",
+    "tutorial",
+    "workshop"
 ]
 toc = true
 draft = false
