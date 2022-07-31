@@ -9,24 +9,25 @@ tags = [
     "javascript",
     "search",
     "database"
+    "fuzzy search"
 ]
 toc = true
-draft = true
+draft = false
 +++
 
 Special thanks to [Mayanwolfe](https://www.twitch.tv/videos/1508382565) for the walkthrough!
 
 ## Configure MongoDb to enable indexing
 
-1. Go to MongoDb > Search Indexes > Create Index. Choose JSON Editor.
-2. Select the correct database and collection. Paste the following JSON. Be sure that the correct field is used in the JSON.
+1. Go to MongoDb > Target Collectio > Search Indexes > Create Index. Choose JSON Editor.
+2. Select the correct database and collection. Paste the following JSON. Be sure that the correct field is used in the JSON. Also, make sure you input a descriptive index name.
 
    ```json
    {
    	"mappings": {
    		"dynamic": false,
    		"fields": {
-   			"title": [
+   			"field-name": [
    				{
    					"foldDiacritics": false,
    					"maxGrams": 7,
@@ -50,21 +51,23 @@ const { MongoClient, ObjectId } = require('mongodb');
 
 ## Setup a GET request for search
 
-The use of this search request is to bring back autocomplete matches (like the dropdown that appear when typing).
+The use of this search request is to bring back autocomplete matches (like the dropdown that appears when typing).
 
 ```js
+// Get autocomplete results
 app.get('/search', async (req, res) => {
 	try {
 		let result = await collection
 			.aggregate([
 				{
 					$search: {
+						index: 'index-name',
 						autocomplete: {
 							query: `${req.query.query}`,
-							path: 'title',
+							path: 'field-name',
 							fuzzy: {
 								maxEdits: 2, // num of characters allowed to be wrong
-								prefixLength: 3, // minimum num of characters to allow autocomplete
+								prefixLength: 2, // minimum num of characters to allow autocomplete
 							},
 						},
 					},
@@ -72,70 +75,78 @@ app.get('/search', async (req, res) => {
 			])
 			.toArray();
 		res.send(result);
-	} catch (error) {
-		res.status(500).send({ message: error.message });
+	} catch (err) {
+		res.status(500).send({ message: err.message });
 	}
 });
 ```
 
-## Setup a GET request for result
+## Setup a GET request for getting item information
+
+This is used when a selection is made from fuzzy results.
 
 ```js
-app.get('/get/:id', asyn(req, res) => {
-  try {
-    let result = await.collection.findOne({
-      "_id": ObjectID(req.params.id)
-    });
-    res.send(result);
-  } catch {
-    res.status(500).send({ message: error.message });
-  }
-})
+app.get('/item/:id', async (req, res) => {
+	try {
+		const result = await collection.findOne({ _id: ObjectId(req.params.id) });
+		res.json(result);
+	} catch {
+		res.status(500).send({ message: err.message });
+	}
+});
+```
+
+## Setup up the HTML for the search
+
+```html
+<div>
+	<input id="search" type="text" />
+</div>
 ```
 
 ## Setup the client side JS using JQuery
 
-Load JQuery in the HTML head
+Load JQuery in the HTML head.
 
 ```html
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-	integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-	crossorigin="anonymous"
-	referrerpolicy="no-referrer"
-></script>
+<link
+	rel="stylesheet"
+	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+/>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 ```
 
 On your JS file:
 
 ```js
 $(document).ready(function () {
-  $('#title').autocomplete({
-        source: async function(req, res) => {
-          let data = await fectch(`http:localhost:8000/search?query=${req.term}`)
-                      .then(results => results.json())
-                      .then(results => results.map(result => {
-                        return {
-                          label: result.title,
-                          value: result.title,
-                          id: result._id
-                        }
-                      }))
-              res(data)
-        },
-        minLength: 2,
-        select: function(event, ui) {
-          console.log(ui.item.id);
-          fetch(`http:localhost:8000/get?query=${ui.item.id}`)
-            .then(result => result.json())
-            .then(result => {
-              $('#cast').empty()
-              result.cast.forEach(cast => {
-                $('#cast').append(`<li>${cast}</li>`)
-              })
-              $('img').attr(src, result.poster)
-            })
-        }
-  })
+	$('#input-name').autocomplete({
+		// Define the source of the autocomplete results
+		source: async function (req, res) {
+			let data = await (await fetch(`/search?query=${req.term}`)).json();
+			let results = data.map((result) => {
+				return {
+					label: result['field-name'],
+					value: result['field-name'],
+					id: result._id,
+				};
+			});
+			res(results);
+		},
+		// Minimum Length
+		minLength: 2,
+		// Define the action when a result is selected
+		select: function (_, ui) {
+			// Somehow, async/await does not work here.
+			const id = ui.item.id;
+			fetch(`/item/${id}`)
+				.then((result) => result.json())
+				.then((result) => {
+					// Insert here what your want to do with the result
+					console.log(result);
+				});
+		},
+	});
 });
 ```
