@@ -8,7 +8,7 @@ tags = [
     "mongodb",
     "javascript",
     "search",
-    "database"
+    "database",
     "fuzzy search"
 ]
 toc = true
