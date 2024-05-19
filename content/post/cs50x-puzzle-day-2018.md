@@ -1,6 +1,6 @@
 +++
 author = "Imari Joy C. Borda"
-title = "CS50x Puzzle Day 2018
+title = "CS50x Puzzle Day 2018"
 date = "2018-03-14"
 description = "Featured by DOST - COARE"
 tags = [
