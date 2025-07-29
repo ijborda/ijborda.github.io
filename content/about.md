@@ -18,6 +18,6 @@ While backend work is my main focus (high-throughput systems, microservices), I�
 
   - Aside from programming, I like to run 🏃‍♀️, hike mountains ⛰️, and just stay active in general. Making space for movement, nature, and the outdoors is an effective way for me to clear my mind and stay grounded.
 
-See some of my hobby [projects](/projects).
+See some of my hobby [projects](/projects) or [writings](/post).
 
 Send me a message: [imari.borda2018@gmail.com](mailto:imari.borda2018@gmail.com)

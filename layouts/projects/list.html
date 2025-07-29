@@ -11,7 +11,10 @@
     >
       {{ $anchorTitle := delimit (split .title " ") "" }}
       <h2 class="portfolio__title" id="{{ $anchorTitle | lower }}">{{ title .title }}</h2>
-      <h3>See <a href="https://github.com/ijborda" target="_blank">more of my projects.</a></h3>
+      <p>
+        Projects born out of curiosity, caffeine, and free weekends.
+        Or side experiments where I tried new tools, concepts, or just had fun building.
+        See <a href="https://github.com/ijborda" target="_blank">more of my hobby projects.</a></p>
       {{ range $i, $p := .portfolioitem }}
         <div class="portfolio">
           {{ if .image }}

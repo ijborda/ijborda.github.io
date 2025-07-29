@@ -63,10 +63,10 @@ identifier = "projects"
 url = "/projects/"
 
 [[menu.main]]
-name = "Blog"
+name = "Posts"
 weight = 400
-identifier = "blog"
-url = "/blog/"
+identifier = "posts"
+url = "/posts/"
 
 [caches]
   [caches.images]
