@@ -16,6 +16,8 @@ While backend work is my main focus (high-throughput systems, microservices), I�
 
   - Most of my web programming skills are self-taught. I’ve made it a habit to study what I need, apply it, and continuously add to my toolkit, all so I can bring more value to the work I do. To further challenge and improve my skills, I joined a few competitive programming contests and pursued industry certifications.
 
+  - Aside from programming, I like to run 🏃‍♀️, hike mountains ⛰️, and just stay active in general. Making space for movement, nature, and the outdoors is an effective way for me to clear my mind and stay grounded.
+
 See some of my [projects](/projects).
 
 Send me a message: [imari.borda2018@gmail.com](mailto:imari.borda2018@gmail.com)
