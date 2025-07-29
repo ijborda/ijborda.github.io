@@ -22,7 +22,7 @@ Held in Davao City, the camp brought together 100 undergraduate scholars from Re
 This is all of us along with the scholars.
 ![alt text](/images/dost-camp-4.jpg)
 
-In our interview, I shared a bit about my journey, a young girl person, trained in mathematics, now working as a software engineer. I talked about the struggles that came after graduation, the small wins that eventually led to bigger ones, and how I’m still learning to serve in ways that feel true and meaningful.
+In our interview, I shared a bit about my journey, a young girl, trained in mathematics, now working as a software engineer. I talked about the struggles that came after graduation, the small wins that eventually led to bigger ones, and how I’m still learning to serve in ways that feel true and meaningful.
 
 ![alt text](/images/dost-camp-1.jpg)
 
