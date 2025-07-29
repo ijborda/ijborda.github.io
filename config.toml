@@ -67,3 +67,7 @@ name = "Blog"
 weight = 400
 identifier = "blog"
 url = "/blog/"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
