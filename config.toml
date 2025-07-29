@@ -15,9 +15,9 @@ googleAnalytics = "G-9MJ2JRM3RN"
 
 [params]
 title = "I'm Imari"
-description = "Researcher and Software Engineer"
+description = "Software Engineer"
 author = "Imari Joy C. Borda"
-profilePicture = "images/profile.jpg"
+profilePicture = "images/profile-avatar.png"
 favicon = "favicons/"
 contentratio = 0.7
 customCss = ["css/custom.css", "css/styles.css"]
@@ -26,11 +26,6 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 mainSections = ["post"]
 gtagId = "G-9MJ2JRM3RN"
-
-[[params.socialIcons]]
-icon = "fab fa-twitter"
-title = "Twitter"
-url = "https://twitter.com/ijborda"
 
 [[params.socialIcons]]
 icon = "fab fa-github"
