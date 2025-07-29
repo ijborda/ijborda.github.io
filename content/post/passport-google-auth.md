@@ -1,7 +1,7 @@
 +++
 author = "Imari Joy C. Borda"
 title = "Google Auth and Passport"
-date = "2022-07-31"
+date = "2019-07-31"
 description = "Brief Guide in Using Google Auth and Passport"
 tags = [
     "tech",

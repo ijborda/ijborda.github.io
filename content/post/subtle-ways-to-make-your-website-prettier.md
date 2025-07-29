@@ -1,7 +1,7 @@
 +++
 author = "Imari Joy C. Borda"
-title = "Subtle ways to make your website prettier"
-date = "2022-06-25"
+title = "Simple ways to make your website prettier"
+date = "2019-06-25"
 description = "Subtle ways to make a website prettier using simple lines of CSS and Javascript"
 tags = [
     "web development",

@@ -19,5 +19,5 @@ Medim article: https://cs50.medium.com/this-was-cs50x-puzzle-day-2018-22d95a4861
 
 Few snaps below :)
 
-![alt text](../images/image.png)
-![alt text](../images/image-1.png)
+![alt text](/images/image.png)
+![alt text](/images/image-1.png)

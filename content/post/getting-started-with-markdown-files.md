@@ -1,7 +1,7 @@
 +++
 author = "Imari Joy C. Borda"
 title = "Getting Started with Markdown Files"
-date = "2022-07-02"
+date = "2019-07-02"
 description = "A guide on how to make your first markdown file and publish it as a static website"
 tags = [
     "tech",
@@ -19,7 +19,7 @@ toc = false
 draft = false
 +++
 
-This is a material I created for an internal workshop on how to get started with markdown files. Here, the following was covered:
+This is a material I created for an internal workshop on how to get started with markdown files. Here, the following were covered:
 
 1. The relevance of markdown files;
 2. Setting up the environment;
