@@ -24,7 +24,8 @@ customCss = ["css/custom.css", "css/styles.css"]
 readMore = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-mainSections = ["post"]
+postSectionName=["posts"]
+mainSections = []
 gtagId = "G-9MJ2JRM3RN"
 
 [[params.socialIcons]]
@@ -49,12 +50,6 @@ name = "Home"
 identifier = "home"
 weight = 100
 url = "/"
-
-[[menu.main]]
-name = "About"
-weight = 200
-identifier = "about"
-url = "/about/"
 
 [[menu.main]]
 name = "Projects"
