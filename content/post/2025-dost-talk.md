@@ -12,7 +12,7 @@ toc = false
 draft = false
 +++
 
-When I received the invitation from DOST-SEI to speak at the Scholars Leadership Camp, it felt surreal. I still remember being on the other side of those events: quiet, unsure, but quietly hopeful. This time, I was being asked to share my story alongside inspiring educators like Mr. Mirveen Cabesay (Licensure Examination for Professional Teachers (LEPT) Top 1, 2023 — Bachelor of Secondary Education) and Mr. Rene Boy Remando, and to be interviewed by none other than Professor Xiao Chua (Historian, De La Salle University).
+When I received the invitation from DOST-SEI to speak at the Scholars Leadership Camp, it felt surreal. I still remember being on the other side of those events: quiet, unsure, but quietly hopeful. This time, I was being asked to share my story alongside inspiring educators like Mr. Mirveen Cabesay (Licensure Examination for Professional Teachers (LEPT) Top 1, 2023 — Bachelor of Secondary Education) and Mr. Rene Boy Remando (Special Science Teacher I of DepEd), and to be interviewed by none other than Professor Xiao Chua (Historian, De La Salle University).
 
 Group picture along with the fellow invited speakers and Professor Chua.
 ![alt text](/images/dost-camp-2.jpg)

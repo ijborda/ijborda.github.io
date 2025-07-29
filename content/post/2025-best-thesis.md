@@ -24,7 +24,7 @@ Group picture with the finalists below. I like that I can still blend in as a st
 
 ![alt text](/images/best-thesis-2025-1.jpg)
 
-Alongside Dr. Kenneth Barroga, PhD (Assistant Regional Director of the Department of Science and Technology Region XI) and and Mr. Ronald A. Gica, MSc (Special Science Teacher and Head of Mathematics Department at the Philippine Science High School Southern Mindanao Campus), I had the chance to review their work, listen to their pitches, and ask questions that hopefully helped them see their projects from new angles.
+Alongside Dr. Kenneth Barroga, PhD (Assistant Regional Director of the Department of Science and Technology Region XI) and Mr. Ronald A. Gica, MSc (Special Science Teacher and Head of Mathematics Department at the Philippine Science High School Southern Mindanao Campus), I had the chance to review their work, listen to their pitches, and ask questions that hopefully helped them see their projects from new angles.
 
 ![alt text](/images/best-thesis-2025-2.jpg)
 
