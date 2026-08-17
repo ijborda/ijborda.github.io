@@ -12,7 +12,7 @@
       {{ $anchorTitle := delimit (split .title " ") "" }}
       <h2 class="portfolio__title" id="{{ $anchorTitle | lower }}">{{ title .title }}</h2>
       <p>
-        Projects born out of curiosity, caffeine, and free weekends.
+        Projects from curiosity and free weekends.
         Or side experiments where I tried new tools, concepts, or just had fun building.
         See <a href="https://github.com/ijborda" target="_blank">more of my hobby projects.</a></p>
       {{ range $i, $p := .portfolioitem }}
