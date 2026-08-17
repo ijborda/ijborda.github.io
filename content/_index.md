@@ -4,7 +4,7 @@ author = "Hugo Authors"
 
 ## Hi! :wave:
 
-I’m a software engineer with 5+ years of experience building backend systems that are fast, reliable, and built to scale. I’ve got a math background, so I naturally lean toward clean algorithms, smart data models, and the occasional machine learning experiment.
+I’m a senior software engineer with 5+ years of experience building backend systems that are fast, reliable, and built to scale. I’ve got a math background, so I naturally lean toward clean algorithms, smart data models, and the occasional machine learning experiment.
 
 While backend work is my main focus (high-throughput systems, microservices), I’ve also dabbled in a bit of everything: cloud stuff (mostly AWS), system architecture, testing, analytics, and machine learning. I enjoy learning and building things. It's also helped me see the bigger picture and understand how all the pieces fit together.
 

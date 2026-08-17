@@ -1,6 +1,6 @@
 baseURL = 'https://ijborda.github.io/'
 languageCode = 'en-us'
-title = 'Imari Joy C. Borda | Reasercher and Software Engineer'
+title = 'Imari Joy C. Borda | Senior Software Engineer'
 enableEmoji = true
 summarylength = 20
 enableRobotsTXT = true
@@ -15,7 +15,7 @@ googleAnalytics = "G-9MJ2JRM3RN"
 
 [params]
 title = "I'm Imari"
-description = "Software Engineer"
+description = "Senior Software Engineer"
 author = "Imari Joy C. Borda"
 profilePicture = "images/profile-avatar.png"
 favicon = "favicons/"
